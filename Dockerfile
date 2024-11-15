@@ -1,6 +1,6 @@
 FROM python:3.8.0
 WORKDIR /usr/src/app
-COPY requirements.txt /usr/src/app/analytics
+COPY analytics/requirements.txt /usr/src/app/
 RUN apt update -y
 # Install a couple of packages to successfully install postgresql server locally
 RUN apt install build-essential libpq-dev -y
